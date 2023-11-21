@@ -17,7 +17,7 @@ const Register = () => {
     const handleSubmit =async (event) => {
         event.preventDefault();
         try{
-           const result=await axios.post( 'https://enable-nine.vercel.app/register', {name, email, password});
+           const result=await axios.post( 'https://enable-nine.vercel.app/api/v1/register', {name, email, password});
 if(result){
     alert("succesfully registered")
 const token=result.data.token;

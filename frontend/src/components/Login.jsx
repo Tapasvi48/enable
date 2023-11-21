@@ -13,7 +13,7 @@ const Login = () => {
         event.preventDefault();
         
 try{
-const result=await axios.post( 'https://vercel.com/tapasvis-projects/enable/login', {email, password});
+const result=await axios.post( 'https://enable-nine.vercel.app/login', {email, password});
 if(result){
     alert("successfully logged in ");
     const token=result.data.token;

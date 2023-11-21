@@ -17,7 +17,7 @@ const Register = () => {
     const handleSubmit =async (event) => {
         event.preventDefault();
         try{
-           const result=await axios.post( 'http://localhost:3001/api/v1/register', {name, email, password});
+           const result=await axios.post( 'https://vercel.com/tapasvis-projects/enable/register', {name, email, password});
 if(result){
     alert("succesfully registered")
 const token=result.data.token;

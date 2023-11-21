@@ -6,8 +6,8 @@ const UserTable = () => {
   const [users, setUsers] = useState([
     { id: 1, name: 'User 1', dateCreated: '2023-01-01', role: 'Admin', status: 'online' },
     { id: 2, name: 'User 2', dateCreated: '2023-02-15', role: 'User', status: 'offline' },
-    { id: 2, name: 'User 2', dateCreated: '2023-02-15', role: 'User', status: 'offline' },
-    { id: 2, name: 'User 2', dateCreated: '2023-02-15', role: 'User', status: 'offline' },
+    { id: 3, name: 'User 3', dateCreated: '2023-02-15', role: 'User', status: 'offline' },
+    { id: 4, name: 'User 4', dateCreated: '2023-02-15', role: 'User', status: 'offline' },
 
   ]);
 

@@ -6,7 +6,7 @@ const cookieParser = require("cookie-parser");
 const mongoose = require('mongoose');
 
 const FormDataModel = require ('./models/FormData');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 var jwt = require('jsonwebtoken')
 
 const app = express();

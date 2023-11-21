@@ -9,8 +9,6 @@ const FormDataModel = require ('./models/FormData');
 const bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken')
 
-
-
 const app = express();
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,7 +23,7 @@ app.use(cookieParser());
 // mongoose.connect('mongodb://127.0.0.1:27017/practice_mern');
 
 app.use("/",(req,res)=>{
-res.json({message:"Hello "});
+res.send("server runnnnadjd");
 
 
 })

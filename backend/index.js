@@ -22,14 +22,14 @@ app.use(cookieParser());
 //     methods:["GET","POST","PUT","DELETE"]
 //   }));
 
-mongoose.connect('mongodb://127.0.0.1:27017/practice_mern');
+// mongoose.connect('mongodb://127.0.0.1:27017/practice_mern');
 
 app.use("/",(req,res)=>{
 res.json({message:"Hello "});
 
 
 })
-app.use("/api/v1", User);
+// app.use("/api/v1", User);
 
 
 

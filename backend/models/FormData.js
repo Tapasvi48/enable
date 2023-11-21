@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
+
 const FormDataSchema = new mongoose.Schema({
     name : String,
     email: String,

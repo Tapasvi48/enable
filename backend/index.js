@@ -13,21 +13,21 @@ const app = express();
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
-// app.use(cors());
-// app.use(cors({
-//     origin: 'https://enable-nxc4.vercel.app',
-//     credentials:true,
-//     methods:["GET","POST","PUT","DELETE"]
-//   }));
+app.use(cors());
+app.use(cors({
+    origin: 'https://enable-nxc4.vercel.app',
+    credentials:true,
+    methods:["GET","POST","PUT","DELETE"]
+  }));
 
-// mongoose.connect('mongodb://127.0.0.1:27017/practice_mern');
+mongoose.connect('mongodb+srv://Tapasvi:<password>@cluster0.wpkxgbb.mongodb.net/?retryWrites=true&w=majority');
 
 app.use("/",(req,res)=>{
 res.send("server runnnnadjd");
 
 
 })
-// app.use("/api/v1", User);
+app.use("/api/v1", User);
 
 
 

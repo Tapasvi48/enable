@@ -27,6 +27,9 @@ mongoose.connect('mongodb://127.0.0.1:27017/practice_mern');
 
 app.use("/api/v1", User);
 
+app.get("/", (req, res) => {
+  res.send("hi hello");
+});
 
 
 

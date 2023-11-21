@@ -6,4 +6,5 @@ router.route("/register").post(registerUser);
 router.route("/login").post(loginUser);
 router.route("/auth").post(isAuthenticatedUser)
 
+
 module.exports = router;
